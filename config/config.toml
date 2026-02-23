@@ -1,0 +1,8 @@
+# Scan interval for idle processes (seconds)
+interval_seconds = 300 # default: 300 (5min)
+
+# Idle thresholds: Process is terminated if usage is below these values
+# CPU usage (%)
+cpu_threshold = 1.0 # default: 1.0
+# Disk I/O bytes
+disk_threshold_bytes = 102_400 # default: 102_400 (100KiB)
