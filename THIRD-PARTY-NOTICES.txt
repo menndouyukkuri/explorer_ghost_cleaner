@@ -206,11 +206,11 @@ License: MIT
 Used by:
   - serde_spanned 1.0.4
       Repository: https://github.com/toml-rs/toml
-  - toml 1.0.1+spec-1.1.0
+  - toml 1.0.4+spec-1.1.0
       Repository: https://github.com/toml-rs/toml
   - toml_datetime 1.0.0+spec-1.1.0
       Repository: https://github.com/toml-rs/toml
-  - toml_parser 1.0.8+spec-1.1.0
+  - toml_parser 1.0.9+spec-1.1.0
       Repository: https://github.com/toml-rs/toml
   - toml_writer 1.0.6+spec-1.1.0
       Repository: https://github.com/toml-rs/toml
@@ -519,7 +519,7 @@ Used by:
   - proc-macro2 1.0.106
       Authors: David Tolnay <dtolnay@gmail.com>, Alex Crichton <alex@alexcrichton.com>
       Repository: https://github.com/dtolnay/proc-macro2
-  - quote 1.0.44
+  - quote 1.0.45
       Authors: David Tolnay <dtolnay@gmail.com>
       Repository: https://github.com/dtolnay/quote
   - serde 1.0.228
@@ -531,10 +531,10 @@ Used by:
   - serde_derive 1.0.228
       Authors: Erick Tryzelaar <erick.tryzelaar@gmail.com>, David Tolnay <dtolnay@gmail.com>
       Repository: https://github.com/serde-rs/serde
-  - syn 2.0.115
+  - syn 2.0.117
       Authors: David Tolnay <dtolnay@gmail.com>
       Repository: https://github.com/dtolnay/syn
-  - unicode-ident 1.0.23
+  - unicode-ident 1.0.24
       Authors: David Tolnay <dtolnay@gmail.com>
       Repository: https://github.com/dtolnay/unicode-ident
 
@@ -569,7 +569,7 @@ DEALINGS IN THE SOFTWARE.
 ================================================================================
 License: MIT
 Used by:
-  - winnow 0.7.14
+  - winnow 0.7.15
       Repository: https://github.com/winnow-rs/winnow
 
 --------------------------------------------------------------------------------
@@ -660,7 +660,7 @@ THE SOFTWARE.
 ================================================================================
 License: MIT
 Used by:
-  - sysinfo 0.38.1
+  - sysinfo 0.38.3
       Authors: Guillaume Gomez <guillaume1.gomez@gmail.com>
       Repository: https://github.com/GuillaumeGomez/sysinfo
 
@@ -693,7 +693,7 @@ SOFTWARE.
 ================================================================================
 License: Unicode-3.0
 Used by:
-  - unicode-ident 1.0.23
+  - unicode-ident 1.0.24
       Authors: David Tolnay <dtolnay@gmail.com>
       Repository: https://github.com/dtolnay/unicode-ident
 

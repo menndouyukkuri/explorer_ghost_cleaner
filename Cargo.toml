@@ -1,6 +1,6 @@
 [package]
 name = "explorer_ghost_cleaner"
-version = "0.1.0"
+version = "0.1.1"
 
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/menndouyukkuri/explorer_ghost_cleaner"
@@ -13,24 +13,29 @@ build = "build.rs"
 
 publish = false
 
+rust-version = "1.94"
+
 
 [dependencies]
 toml = "1.0"
+
+serde = {
+	version = "1.0",
+	features = [
+		"derive",
+	],
+}
+
 tray-item = "0.10"
 sysinfo = "0.38"
 
-[dependencies.serde]
-version = "1.0"
-features = [
-	"derive",
-]
-
-[dependencies.windows]
-version = "0.62"
-features = [
-	"Win32_Foundation",
-	"Win32_UI_WindowsAndMessaging",
-]
+windows = {
+	version = "0.62",
+	features = [
+		"Win32_Foundation",
+		"Win32_UI_WindowsAndMessaging",
+	],
+}
 
 
 [build-dependencies]
