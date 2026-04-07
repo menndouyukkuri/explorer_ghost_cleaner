@@ -1,6 +1,6 @@
 [package]
 name = "explorer_ghost_cleaner"
-version = "0.1.1"
+version = "0.1.2"
 
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/menndouyukkuri/explorer_ghost_cleaner"
@@ -17,7 +17,7 @@ rust-version = "1.94"
 
 
 [dependencies]
-toml = "1.0"
+toml = "1.1"
 
 serde = {
 	version = "1.0",
