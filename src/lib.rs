@@ -42,13 +42,13 @@ pub fn run_app() -> Result<(), Box<dyn Error>> {
 	let config = load_config();
 
 	// Channels
-	let (main_exit_send, main_exit_recv) = mpsc::channel();
-	let (worker_exit_send, worker_exit_recv) = mpsc::channel();
+	let (cmd_worker_exit_send, cmd_worker_exit_recv) = mpsc::channel();
+	let (rpt_worker_exit_send, rpt_worker_exit_recv) = mpsc::channel();
 
 	// Worker thread (terminates on Ok(()) or channel disconnection)
 	let worker_handle = thread::spawn(move || {
-		run_worker(config, worker_exit_recv);
-		let _ = main_exit_send.send(());  // Even if a panic occurs, the main thread can terminate because 'main_exit_send' is dropped
+		run_worker(config, cmd_worker_exit_recv);
+		let _ = rpt_worker_exit_send.send(());  // Even if a panic occurs, the main thread can terminate because 'rpt_worker_exit_send' is dropped
 	});
 
 	// Tray icon
@@ -56,11 +56,11 @@ pub fn run_app() -> Result<(), Box<dyn Error>> {
 		.map_err(|e| format!("Failed to create tray icon: {}", e))?;
 
 	tray.add_menu_item("Exit", move || {
-		let _ = worker_exit_send.send(());
+		let _ = cmd_worker_exit_send.send(());
 	}).map_err(|e| format!("Failed to add menu item: {}", e))?;
 
 	// Wait for main exit signal
-	let _ = main_exit_recv.recv();  // Ignore Err(_) here; errors are caught by worker_handle
+	let _ = rpt_worker_exit_recv.recv();  // Ignore Err(_) here; errors are caught by worker_handle
 
 	// Wait for the worker thread to finish
 	worker_handle.join().map_err(|e| format!(
