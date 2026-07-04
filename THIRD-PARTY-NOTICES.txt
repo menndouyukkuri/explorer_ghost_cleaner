@@ -393,7 +393,17 @@ Used by:
       Repository: http://github.com/SSheldon/rust-objc-foundation
   - objc2-core-foundation 0.3.2
       Repository: https://github.com/madsmtm/objc2
+  - objc2-encode 4.1.0
+      Authors: Mads Marquart <mads@marquart.dk>
+      Repository: https://github.com/madsmtm/objc2
+  - objc2-foundation 0.3.2
+      Repository: https://github.com/madsmtm/objc2
   - objc2-io-kit 0.3.2
+      Repository: https://github.com/madsmtm/objc2
+  - objc2-open-directory 0.3.2
+      Repository: https://github.com/madsmtm/objc2
+  - objc2 0.6.4
+      Authors: Mads Marquart <mads@marquart.dk>
       Repository: https://github.com/madsmtm/objc2
   - objc_id 0.1.1
       Authors: Steven Sheldon
@@ -660,7 +670,7 @@ THE SOFTWARE.
 ================================================================================
 License: MIT
 Used by:
-  - sysinfo 0.38.4
+  - sysinfo 0.39.5
       Authors: Guillaume Gomez <guillaume1.gomez@gmail.com>
       Repository: https://github.com/GuillaumeGomez/sysinfo
 
