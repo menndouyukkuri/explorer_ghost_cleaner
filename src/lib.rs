@@ -12,6 +12,7 @@ use serde::Deserialize;
 use tray_item::{TrayItem, IconSource};
 
 
+pub mod args;
 pub mod ui;
 
 mod format;

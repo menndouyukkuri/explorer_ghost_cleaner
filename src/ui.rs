@@ -19,7 +19,7 @@ pub fn show_error_dialog<E: std::fmt::Display>(err: E) {
 }
 
 
-pub(super) fn show_message_box<S: Into<HSTRING>>(
+pub(crate) fn show_message_box<S: Into<HSTRING>>(
 	hwnd: Option<HWND>, message: S, style: MESSAGEBOX_STYLE
 ) -> MESSAGEBOX_RESULT {
 	unsafe {

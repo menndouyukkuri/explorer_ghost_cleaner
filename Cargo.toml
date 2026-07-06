@@ -1,12 +1,13 @@
 [package]
 name = "explorer_ghost_cleaner"
-version = "0.1.3"
+version = "0.1.4"
 
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/menndouyukkuri/explorer_ghost_cleaner"
 authors = [
 	"menndouyukkuri",
 ]
+description = "A lightweight Windows tray application that automatically cleans up \"ghost\" explorer.exe processes."
 
 edition = "2024"
 build = "build.rs"
